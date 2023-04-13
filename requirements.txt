@@ -1,0 +1,5 @@
+hl7==0.4.5
+pydantic==1.10.5
+fhir.resources==6.5.0
+Jinja2==3.1.2
+requests
