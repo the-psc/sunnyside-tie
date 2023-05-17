@@ -1,4 +1,4 @@
-MSH|^~\&|{{app_data.msh.sending_app}}|{{app_data.msh.sending_fac}}|{{app_data.msh.dest_app}}|{{app_data.msh.dest_fac}}|{{app_data.msh.timestamp}}||ADT^A01|{{data.msh.message_control_id}}|T^T|2.8|||AL||44|ASCII
+MSH|^~\&|{{app_data.msh.sending_app}}|{{app_data.msh.sending_fac}}|{{app_data.msh.dest_app}}|{{app_data.msh.dest_fac}}|{{app_data.msh.timestamp}}||ADT^A01|{{data.msh.message_control_id}}|T^T|2.3|||AL||44|ASCII
 EVN|A01|{{app_data.msh.timestamp}}||||
 PID|1||{{data.pid.nhs_number}}^^^NHSNBR^NHSNMBR||{{data.pid.family_name}}^{{data.pid.given_name_first}}^{{data.pid.given_name_middle}}^^^^USUAL||{{data.pid.dob}}||||^^^^^^||^|||||||||^^^^||||||||
 PV1|1|I|{{data.pv1.ward}}^MainRoom^Bed 1^Sunnyside Hospital^^BED^Main Building^5|28b|||C006^Wolf^Kathy^^^Dr^^^DRNBR^PRSNL^^^ORGDR|||MED|||||||||6145914547062969032^^^^visitid||||||||||||||||||||||ARRIVED|||{{app_data.msh.timestamp}}||

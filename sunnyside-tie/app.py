@@ -124,9 +124,11 @@ def make_http_request(host, port, path, msg):
         else:
             port = ""
         url = host + port + (path or "/")
-        requests.post(url=url, data=msg)
+        resp = requests.post(url=url, data=msg)
         print(f"[{Fore.CYAN}INFO{Fore.WHITE}] Sent message: ", end="")
         print_v2_stdout(msg)
+        print(f"[{Fore.GREEN}RESPONSE{Fore.WHITE}] Received response: ",end="")
+        print_v2_stdout(resp.content.decode())
     except requests.exceptions.ConnectionError:
         print(f"[{Fore.RED}ERROR{Fore.WHITE}] Failed to connect to {url}")
 
